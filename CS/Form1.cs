@@ -27,7 +27,7 @@ namespace WindowsApplication1
             for (int i = 0; i < 10; i++)
                 ri.Items.Add(String.Format("Test{0}", i));
 
-            new MultiSelectionEditingHelper(gridView1);
+            new MultiSelectEditingHelper(gridView1, new [] { gridView1.Columns[1], gridView1.Columns[2] });
         }
     }
 }
