@@ -20,7 +20,7 @@ namespace WindowsApplication1
             InitializeComponent();
             gridControl1.DataSource = DataHelper.CreateTable(20);
             gridView1.OptionsSelection.MultiSelect = true;
-            gridView1.OptionsSelection.MultiSelectMode = GridMultiSelectMode.CellSelect;
+            gridView1.OptionsSelection.MultiSelectMode = GridMultiSelectMode.RowSelect;
             RepositoryItemComboBox ri = new RepositoryItemComboBox();
             gridView1.Columns["Number"].ColumnEdit = ri;
 
